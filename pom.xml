@@ -40,7 +40,7 @@
   </properties>
 
   <dependencies>
-    <!-- Spring and Spring Boot dependencies -->
+    <!-- Dependencies -->
     <dependency>
       <groupId>org.springframework.boot</groupId>
       <artifactId>spring-boot-starter-actuator</artifactId>
