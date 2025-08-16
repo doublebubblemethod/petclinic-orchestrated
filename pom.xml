@@ -30,12 +30,18 @@
     <webjars-font-awesome.version>4.7.0</webjars-font-awesome.version>
 
     <checkstyle.version>10.25.0</checkstyle.version>
-    <jacoco.version>0.8.13</jacoco.version>
     <libsass.version>0.3.4</libsass.version>
     <lifecycle-mapping>1.0.0</lifecycle-mapping>
     <maven-checkstyle.version>3.6.0</maven-checkstyle.version>
     <nohttp-checkstyle.version>0.0.11</nohttp-checkstyle.version>
     <spring-format.version>0.0.46</spring-format.version>
+    
+    <!-- JaCoCo Properties -->
+    <jacoco.version>0.8.13</jacoco.version>
+    <sonar.java.coveragePlugin>jacoco</sonar.java.coveragePlugin>
+    <sonar.dynamicAnalysis>reuseReports</sonar.dynamicAnalysis>
+    <sonar.language>java</sonar.language>
+    <sonar.coverage.jacoco.xmlReportPaths>target/site/jacoco/jacoco.xml</sonar.coverage.jacoco.xmlReportPaths>
 
   </properties>
 
@@ -249,20 +255,21 @@
         <groupId>org.jacoco</groupId>
         <artifactId>jacoco-maven-plugin</artifactId>
         <version>${jacoco.version}</version>
-        <executions>
-          <execution>
+       <executions>
+        <execution>
+            <id>jacoco-initialize</id>
             <goals>
-              <goal>prepare-agent</goal>
+                <goal>prepare-agent</goal>
             </goals>
-          </execution>
-          <execution>
-            <id>report</id>
+        </execution>
+        <execution>
+            <id>jacoco-site</id>
+            <phase>package</phase>
             <goals>
-              <goal>report</goal>
+                <goal>report</goal>
             </goals>
-            <phase>prepare-package</phase>
-          </execution>
-        </executions>
+        </execution>
+      </executions>
       </plugin>
 
       <!-- Spring Boot Actuator displays build-related information if a git.properties file is
