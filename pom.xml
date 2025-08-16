@@ -39,10 +39,7 @@
     <!-- JaCoCo Properties -->
     <jacoco.version>0.8.13</jacoco.version>
     <sonar.java.coveragePlugin>jacoco</sonar.java.coveragePlugin>
-    <sonar.dynamicAnalysis>reuseReports</sonar.dynamicAnalysis>
-    <sonar.language>java</sonar.language>
     <sonar.coverage.jacoco.xmlReportPaths>target/site/jacoco/jacoco.xml</sonar.coverage.jacoco.xmlReportPaths>
-
   </properties>
 
   <dependencies>
@@ -251,26 +248,6 @@
           </execution>
         </executions>
       </plugin>
-      <plugin>
-        <groupId>org.jacoco</groupId>
-        <artifactId>jacoco-maven-plugin</artifactId>
-        <version>${jacoco.version}</version>
-       <executions>
-        <execution>
-            <id>jacoco-initialize</id>
-            <goals>
-                <goal>prepare-agent</goal>
-            </goals>
-        </execution>
-        <execution>
-            <id>jacoco-site</id>
-            <phase>package</phase>
-            <goals>
-                <goal>report</goal>
-            </goals>
-        </execution>
-      </executions>
-      </plugin>
 
       <!-- Spring Boot Actuator displays build-related information if a git.properties file is
       present at the classpath -->
@@ -452,6 +429,37 @@
             </plugin>
           </plugins>
         </pluginManagement>
+      </build>
+    </profile>
+    <profile>
+      <id>coverage</id>
+      <build>
+      <plugins>
+        <plugin>
+          <groupId>org.jacoco</groupId>
+        <artifactId>jacoco-maven-plugin</artifactId>
+          <version>${jacoco.version}</version>
+          <executions>
+            <execution>
+              <id>prepare-agent</id>
+              <goals>
+                <goal>prepare-agent</goal>
+              </goals>
+            </execution>
+            <execution>
+              <id>report</id>
+              <goals>
+                <goal>report</goal>
+              </goals>
+              <configuration>
+                <formats>
+                  <format>XML</format>
+                </formats>
+              </configuration>
+            </execution>
+          </executions>
+        </plugin>
+      </plugins>
       </build>
     </profile>
   </profiles>
