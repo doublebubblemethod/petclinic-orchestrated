@@ -1,11 +1,11 @@
 HELP.md
-pom.xml.bak
-target/
+!pom.xml.bak
+!target/
 !.mvn/wrapper/maven-wrapper.jar
 !**/src/main/**/target/
 !**/src/test/**/target/
 .gradle
-build/
+!build/
 !gradle/wrapper/gradle-wrapper.jar
 !**/src/main/**/build/
 !**/src/test/**/build/
