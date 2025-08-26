@@ -38,6 +38,7 @@
     
     <!-- JaCoCo Properties -->
     <jacoco.version>0.8.13</jacoco.version>
+    <dependency.version>3.1.1</dependency.version>
   </properties>
 
   <dependencies>
