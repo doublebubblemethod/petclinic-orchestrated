@@ -34,14 +34,14 @@ public class PetClinicIntegrationTests {
 
 	@Autowired
 	private VetRepository vets;
-	
+
 	@Autowired
-    private Environment environment;
+	private Environment environment;
 
 	@BeforeAll
-    static void logActiveProfiles(@Autowired Environment env) {
-        System.out.println("Active Spring profiles: " + String.join(", ", env.getActiveProfiles()));
-    }
+	static void logActiveProfiles(@Autowired Environment env) {
+		System.out.println("Active Spring profiles: " + String.join(", ", env.getActiveProfiles()));
+	}
 
 	@Test
 	void testFindAll() {
