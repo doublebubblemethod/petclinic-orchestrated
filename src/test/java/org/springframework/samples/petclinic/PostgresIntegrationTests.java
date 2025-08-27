@@ -27,7 +27,7 @@ import org.springframework.test.context.ActiveProfiles;
 import org.junit.jupiter.api.condition.DisabledInNativeImage;
 
 @SpringBootTest(webEnvironment = WebEnvironment.RANDOM_PORT)
-@ActiveProfiles("dev")
+@ActiveProfiles("test")
 @DisabledInNativeImage
 public class PostgresIntegrationTests {
 

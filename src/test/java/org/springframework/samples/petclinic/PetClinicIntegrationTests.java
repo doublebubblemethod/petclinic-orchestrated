@@ -30,7 +30,7 @@ import org.springframework.samples.petclinic.vet.VetRepository;
 import org.springframework.web.client.RestTemplate;
 
 @SpringBootTest(webEnvironment = WebEnvironment.RANDOM_PORT)
-@ActiveProfiles("dev")
+@ActiveProfiles("test")
 public class PetClinicIntegrationTests {
 
 	@Autowired
