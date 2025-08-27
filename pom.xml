@@ -36,9 +36,6 @@
     <nohttp-checkstyle.version>0.0.11</nohttp-checkstyle.version>
     <spring-format.version>0.0.46</spring-format.version>
     
-    <!-- JaCoCo Properties -->
-    <jacoco.version>0.8.13</jacoco.version>
-    <dependency.version>3.1.1</dependency.version>
   </properties>
 
   <dependencies>
@@ -157,33 +154,21 @@
   <build>
     <plugins>
       <plugin>
-        <groupId>org.apache.maven.plugins</groupId>
-        <artifactId>maven-dependency-plugin</artifactId>
-        <version>${dependency.version}</version>
+        <groupId>org.jacoco</groupId>
+        <artifactId>jacoco-maven-plugin</artifactId>
+        <version>0.8.13</version>
         <executions>
             <execution>
-                <phase>package</phase>
                 <goals>
-                    <goal>copy</goal>
+                    <goal>prepare-agent</goal>
                 </goals>
-                <configuration>
-                    <artifactItems>
-                        <artifactItem>
-                            <groupId>org.jacoco</groupId>
-                            <artifactId>org.jacoco.agent</artifactId>
-                            <version>${jacoco.version}</version>
-                            <classifier>runtime</classifier>
-                            <destFileName>jacocoagent.jar</destFileName>
-                        </artifactItem>
-                        <artifactItem>
-                            <groupId>org.jacoco</groupId>
-                            <artifactId>org.jacoco.cli</artifactId>
-                            <version>${jacoco.version}</version>
-                            <classifier>nodeps</classifier>
-                            <destFileName>jacococli.jar</destFileName>
-                        </artifactItem>
-                    </artifactItems>
-                </configuration>
+            </execution>
+            <execution>
+                <id>report</id>
+                <phase>test</phase>
+                <goals>
+                    <goal>report</goal>
+                </goals>
             </execution>
         </executions>
       </plugin>
