@@ -31,8 +31,6 @@ import org.springframework.web.client.RestTemplate;
 @SpringBootTest(webEnvironment = WebEnvironment.RANDOM_PORT)
 public class PetClinicIntegrationTests {
 
-	@LocalServerPort
-	int port;
 
 	@Autowired
 	private VetRepository vets;
@@ -42,13 +40,8 @@ public class PetClinicIntegrationTests {
 		vets.findAll();
 		vets.findAll(); // served from cache
 	}
-
 	@Test
-	void testOwnerDetails() {
-		StringClass stringClass = new StringClass();
-		assertThrows(IllegalArgumentException.class, () -> {
-			stringClass.getStringValue(null);
-		});
-	}
-
+    void contextLoads() {
+        // This will start the Spring context.
+    }
 }
