@@ -31,7 +31,6 @@ import org.springframework.web.client.RestTemplate;
 @SpringBootTest(webEnvironment = WebEnvironment.RANDOM_PORT)
 public class PetClinicIntegrationTests {
 
-
 	@Autowired
 	private VetRepository vets;
 
@@ -40,8 +39,10 @@ public class PetClinicIntegrationTests {
 		vets.findAll();
 		vets.findAll(); // served from cache
 	}
+
 	@Test
-    void contextLoads() {
-        // This will start the Spring context.
-    }
+	void contextLoads() {
+		// This will start the Spring context.
+	}
+
 }
