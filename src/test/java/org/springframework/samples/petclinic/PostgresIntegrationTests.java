@@ -49,7 +49,7 @@ import org.springframework.web.client.RestTemplate;
 import org.testcontainers.DockerClientFactory;
 
 @SpringBootTest(webEnvironment = WebEnvironment.RANDOM_PORT)
-@ActiveProfiles("postgres")
+@ActiveProfiles("dev")
 @DisabledInNativeImage
 public class PostgresIntegrationTests {
 
