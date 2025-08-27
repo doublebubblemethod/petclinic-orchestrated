@@ -1,0 +1,34 @@
+#surefire_0
+#Wed Aug 27 20:10:52 CEST 2025
+junit.platform.listeners.uid.tracking.enabled=true
+git.tags=
+junit.platform.listeners.uid.tracking.output.dir=/home/jenkins/agent/workspace/Sonar_Tests/target/test-ids
+git.build.version=3.5.0-SNAPSHOT
+git.branch=newimage
+git.build.host=kube-agent-bxhnl
+git.build.number=48
+git.commit.id=cf00937dc7ddc62ca620b5e3f6cf62287333aaea
+git.commit.user.email=antihobbit@protonmail.com
+git.local.branch.behind=NO_REMOTE
+git.commit.author.time=2025-08-27T15\:43\:11+02\:00
+git.build.user.name=
+git.dirty=true
+localRepository=/home/jenkins/.m2/repository
+git.closest.tag.commit.count=
+git.commit.user.name=doublebubblemethod
+git.commit.id.abbrev=cf00937
+git.commit.id.describe-short=cf00937-dirty
+spring.profiles.active=test
+git.total.commit.count=1009
+git.commit.id.describe=cf00937-dirty
+basedir=/home/jenkins/agent/workspace/Sonar_Tests
+git.build.user.email=
+git.commit.message.short=rename active profiles
+git.commit.committer.time=2025-08-27T15\:43\:11+02\:00
+git.tag=
+git.closest.tag.name=
+git.local.branch.ahead=NO_REMOTE
+git.commit.time=2025-08-27T15\:43\:11+02\:00
+git.build.time=2024-11-28T15\:37\:52+01\:00
+git.commit.message.full=rename active profiles
+git.remote.origin.url=https\://github.com/doublebubblemethod/petclinic-orchestrated.git

@@ -1,5 +1,3 @@
-/home/jenkins/agent/workspace/Sonar_Tests/src/test/java/org/springframework/samples/petclinic/MySqlIntegrationTests.java
-/home/jenkins/agent/workspace/Sonar_Tests/src/test/java/org/springframework/samples/petclinic/MysqlTestApplication.java
 /home/jenkins/agent/workspace/Sonar_Tests/src/test/java/org/springframework/samples/petclinic/PetClinicIntegrationTests.java
 /home/jenkins/agent/workspace/Sonar_Tests/src/test/java/org/springframework/samples/petclinic/PostgresIntegrationTests.java
 /home/jenkins/agent/workspace/Sonar_Tests/src/test/java/org/springframework/samples/petclinic/model/ValidatorTests.java

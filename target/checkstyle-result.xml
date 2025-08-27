@@ -38,10 +38,6 @@
 </file>
 <file name="/home/jenkins/agent/workspace/Sonar_Tests/src/test/jmeter/petclinic_test_plan.jmx">
 </file>
-<file name="/home/jenkins/agent/workspace/Sonar_Tests/src/test/java/org/springframework/samples/petclinic/MySqlIntegrationTests.java">
-</file>
-<file name="/home/jenkins/agent/workspace/Sonar_Tests/src/test/java/org/springframework/samples/petclinic/MysqlTestApplication.java">
-</file>
 <file name="/home/jenkins/agent/workspace/Sonar_Tests/src/test/java/org/springframework/samples/petclinic/service/ClinicServiceTests.java">
 </file>
 <file name="/home/jenkins/agent/workspace/Sonar_Tests/src/test/java/org/springframework/samples/petclinic/service/EntityUtils.java">
@@ -89,6 +85,10 @@
 <file name="/home/jenkins/agent/workspace/Sonar_Tests/src/main/resources/messages/messages_pt.properties">
 </file>
 <file name="/home/jenkins/agent/workspace/Sonar_Tests/src/main/resources/messages/messages_ru.properties">
+</file>
+<file name="/home/jenkins/agent/workspace/Sonar_Tests/src/main/resources/application-test.properties">
+</file>
+<file name="/home/jenkins/agent/workspace/Sonar_Tests/src/main/resources/application-dev.properties">
 </file>
 <file name="/home/jenkins/agent/workspace/Sonar_Tests/src/main/resources/application.properties">
 </file>
