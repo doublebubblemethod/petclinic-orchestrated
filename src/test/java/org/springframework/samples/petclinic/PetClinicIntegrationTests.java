@@ -36,7 +36,7 @@ public class PetClinicIntegrationTests {
 
 	@Autowired
 	private VetRepository vets;
-	
+
 	@Test
 	void testFindAll() {
 		vets.findAll();
@@ -50,6 +50,5 @@ public class PetClinicIntegrationTests {
 			stringClass.getStringValue(null);
 		});
 	}
-
 
 }
